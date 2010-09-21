@@ -1,8 +1,11 @@
 package no.bouvet.coolquotes;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CoolQuotesRepository {
 
     private List<String> storage = new ArrayList<String>();
