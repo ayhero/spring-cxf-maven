@@ -12,4 +12,10 @@
     <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
+    <jaxws:endpoint id="coolquotesService"
+                    implementorClass="no.bouvet.coolquotes.CoolQuotes"
+                    implementor="#coolQuotesGenerator" address="/CoolQuotes">
+    </jaxws:endpoint>
+
+
 </beans>
